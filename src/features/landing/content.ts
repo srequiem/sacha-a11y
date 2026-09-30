@@ -42,9 +42,6 @@ export const HERO = {
   secondaryCta: 'Me contacter par e-mail',
 } as const;
 
-
-export const PLACEHOLDER_IMAGE = '/logos/react.svg';
-// Replace each logoSrc with /logos/<company>.svg once the files are in /public/logos.
 export const COMPANIES: Company[] = [
   { name: 'Deezer', logoSrc: '/logos/deezer.png' },
   { name: 'Devialet', logoSrc: '/logos/devialet.png' },
