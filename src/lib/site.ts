@@ -3,6 +3,5 @@ export const SITE = {
   name: 'Sacha Requiem',
   tagline: 'Accessibilité React',
   email: 'sacharequiem@live.fr',
-  calendarUrl: 'https://cal.com/votre-lien/15min',
-  url: 'https://www.exemple.fr',
+  url: 'https://sachaccess.vercel.app',
 } as const;
