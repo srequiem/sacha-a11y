@@ -1,0 +1,53 @@
+.contact {
+  padding-block: 0 var(--space-section);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: clamp(2.5rem, 7vw, 5rem) 1.5rem;
+  border-radius: var(--radius-l);
+  background: var(--color-surface);
+  box-shadow:
+    inset 0 0 0 1px var(--color-line),
+    0 40px 80px -60px rgb(0 0 0 / 0.35);
+  text-align: center;
+}
+
+.title {
+  font-size: clamp(2rem, 1.4rem + 2.6vw, 3.25rem);
+  font-weight: 640;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+}
+
+.lead {
+  max-width: 32rem;
+  margin-top: 1rem;
+  color: var(--color-muted);
+  font-size: clamp(1.0625rem, 1rem + 0.3vw, 1.1875rem);
+  text-wrap: pretty;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+  margin-top: 2.25rem;
+}
+
+.email {
+  margin-top: 1.5rem;
+  color: var(--color-muted);
+  font-size: 0.9375rem;
+}
+
+@media (min-width: 768px) {
+  .actions {
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+  }
+}

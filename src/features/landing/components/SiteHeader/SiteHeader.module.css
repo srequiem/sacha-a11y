@@ -1,0 +1,35 @@
+.header {
+  border-bottom: 1px solid var(--color-line);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 4.25rem;
+}
+
+.brand {
+  display: flex;
+  align-items: baseline;
+  gap: 0.625rem;
+}
+
+.name {
+  font-size: 1.25rem;
+  font-weight: 640;
+  letter-spacing: -0.025em;
+}
+
+.tagline {
+  display: none;
+  color: var(--color-muted);
+  font-size: 0.9375rem;
+}
+
+@media (min-width: 768px) {
+  .tagline {
+    display: inline;
+  }
+}

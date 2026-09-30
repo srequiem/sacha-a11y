@@ -1,0 +1,110 @@
+.figure {
+  max-width: 40rem;
+  margin: clamp(3.5rem, 8vw, 5.5rem) auto 0;
+}
+
+/* The panel wears the site's focus ring: it is "the element being read". */
+.panel {
+  position: relative;
+  padding: 1.25rem 1.25rem 1.5rem;
+  border-radius: var(--radius-l);
+  background: var(--color-panel);
+  color: var(--color-panel-text);
+  box-shadow:
+    0 0 0 3px var(--color-bg),
+    0 0 0 6px var(--color-focus),
+    0 30px 60px -30px rgb(0 0 0 / 0.45);
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-panel-muted);
+  font-size: 0.875rem;
+}
+
+.signal {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: #34c759;
+}
+
+.line {
+  min-height: 3.2em;
+  margin-top: 1rem;
+  font-size: clamp(1.25rem, 1rem + 1.2vw, 1.75rem);
+  font-weight: 520;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+}
+
+.animated {
+  animation: announce 420ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+.lineRole {
+  color: var(--color-panel-muted);
+  font-weight: 420;
+}
+
+.steps {
+  display: flex;
+  gap: 0.375rem;
+  margin-top: 1.25rem;
+}
+
+.step {
+  width: 1.25rem;
+  height: 0.25rem;
+  border-radius: var(--radius-pill);
+  background: rgb(255 255 255 / 0.18);
+  transition: background-color 300ms ease, width 300ms ease;
+}
+
+.stepActive {
+  width: 2.25rem;
+  background: var(--color-panel-text);
+}
+
+.caption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  color: var(--color-muted);
+  font-size: 0.9375rem;
+  text-align: center;
+}
+
+.toggle {
+  min-height: 2.75rem;
+  padding: 0 0.75rem;
+  border: 0;
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: var(--color-accent);
+  font: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .panel {
+    padding: 1.5rem 2rem 1.75rem;
+  }
+}
+
+@keyframes announce {
+  from {
+    opacity: 0;
+    transform: translateY(0.4rem);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}

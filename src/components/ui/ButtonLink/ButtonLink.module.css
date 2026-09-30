@@ -1,0 +1,52 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3rem;
+  padding: 0 1.5rem;
+  border-radius: var(--radius-pill);
+  border: 1.5px solid transparent;
+  font-size: 1.0625rem;
+  font-weight: 560;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  text-align: center;
+  transition:
+    background-color 160ms ease,
+    color 160ms ease;
+}
+
+.primary {
+  background: var(--color-accent);
+  color: var(--color-on-accent);
+}
+
+.primary:hover {
+  background: var(--color-accent-hover);
+}
+
+.secondary {
+  background: transparent;
+  color: var(--color-accent);
+  border-color: currentColor;
+}
+
+.secondary:hover {
+  background: var(--color-accent-soft);
+}
+
+.default {
+  width: 100%;
+}
+
+.small {
+  min-height: 2.75rem;
+  padding: 0 1.125rem;
+  font-size: 0.9375rem;
+}
+
+@media (min-width: 768px) {
+  .default {
+    width: auto;
+  }
+}
