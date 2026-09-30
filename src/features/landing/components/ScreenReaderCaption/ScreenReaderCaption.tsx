@@ -16,7 +16,6 @@ const ScreenReaderCaption = () => {
     LINE_DURATION_MS,
   );
   const line = SCREEN_READER_LINES[lineIndex];
-  console.log('lineIndex', lineIndex, 'isPaused', isPaused, 'isAnimated', isAnimated, 'canAnimate', canAnimate, 'line', line);
 
   return (
     <figure className={styles.figure}>
