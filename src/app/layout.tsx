@@ -19,6 +19,14 @@ export const metadata: Metadata = {
     description: 'Mettez vos applications en conformité, sans ralentir votre roadmap produit.',
     locale: 'fr_FR',
     type: 'website',
+    images: [
+      {
+        url: '/opengraph-image.svg',
+        width: 1200,
+        height: 630,
+        alt: 'Sacha Access, accessibilité React, WCAG et RGAA',
+      },
+    ],
   },
 };
 
